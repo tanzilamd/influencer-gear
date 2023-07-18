@@ -1,0 +1,21 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
+
+/* Variables */
+:root {
+    --btn-bg: #E02C6D;
+    --text-color: #3A3A3A;
+    --footer-bg: #0A0826;
+    --shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-size: 16px;
+}
