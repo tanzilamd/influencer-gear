@@ -207,12 +207,39 @@ nav a {
     border-radius: 0px;
 }
 
+/* Footer */
+footer {
+    background-color: #0A0826;
+    padding: 50px 0;
+    color: #FFF;
+    text-align: center;
+}
+footer h4 {
+    font-size: 1.5rem;
+}
+footer p {
+    font-size: 0.8rem;
+    color: #D9DBE1;
+}
+.social-media {
+    margin-top: 12px;
+}
+.social-media i {
+    background-color: #22213C;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 /* Reponsive Design */
 /* Mobile */
 @media screen and (max-width: 576px) {
-    body {
+    header, main {
         padding: 0 20px;
+    }
+    .logo {
+        font-size: 2rem;
     }
     nav, .banner {
         flex-direction: column;
@@ -244,5 +271,11 @@ nav a {
 
     .items-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    footer {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right:0 ;
     }
 }
