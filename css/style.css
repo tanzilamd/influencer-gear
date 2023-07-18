@@ -35,6 +35,10 @@ a {
     font-weight: 700;
     color: #FFF;
 }
+section {
+    margin: 100px auto;
+    max-width: 1140px;
+}
 
 /* Header */
 nav {
@@ -88,4 +92,44 @@ nav a {
 }
 .banner-img img {
     width: 80%;
+}
+
+/* Sponsors */
+.sponsor-img-container {
+    border-top: 1px solid rgba(192, 204, 218, 0.60);
+    border-bottom: 1px solid rgba(192, 204, 218, 0.60);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Reponsive Design */
+/* Mobile */
+@media screen and (max-width: 576px) {
+    body {
+        padding: 0 20px;
+    }
+    nav, .banner {
+        flex-direction: column;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .banner-content {
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
 }
