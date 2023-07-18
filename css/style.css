@@ -116,6 +116,7 @@ nav a {
     font-weight: 600;
     line-height: 70px;
     text-align: center;
+    margin-bottom: 25px;
 }
 .items-container {
     display: grid;
@@ -163,6 +164,49 @@ nav a {
     font-weight: 700;
     line-height: 150%;
 }
+.see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+    display: block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Featured Section */
+.featured-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.featured-img {
+    width: 40%;
+    text-align: center;
+}
+.featured-img img {
+    width: 80%;
+}
+.featured-content {
+    width: 60%;
+}
+.featured-content h3 {
+    color: #0A0826;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.featured-content p {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px; 
+    margin-bottom: 20px;
+}
+.featured-content button {
+    border-radius: 0px;
+}
+
 
 /* Reponsive Design */
 /* Mobile */
@@ -173,14 +217,23 @@ nav a {
     nav, .banner {
         flex-direction: column;
     }
-    .banner {
+    .banner, .featured-container {
         flex-direction: column-reverse;
     }
     nav ul {
         flex-wrap: wrap;
         margin-top: 20px;
     }
-    .banner-content {
+    .banner-content, .featured-content, .featured-img {
+        width: 100%;
+    }
+    .featured-content {
+        text-align: center;
+    }
+    .featured-img {
+        margin-top: 30px;
+    }
+    .featured-img img {
         width: 100%;
     }
     .banner-img {
