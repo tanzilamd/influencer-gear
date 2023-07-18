@@ -241,6 +241,9 @@ footer p {
     .logo {
         font-size: 2rem;
     }
+    nav {
+        text-align: center;
+    }
     nav, .banner {
         flex-direction: column;
     }
